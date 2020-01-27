@@ -70,7 +70,7 @@ class _HomeAppBarState extends State<HomeAppBar> with TickerProviderStateMixin {
                           height: 6.0,
                         ),
                         Text(
-                          "Grap your new ride now",
+                          "Grab your new ride now",
                           style: TextStyle(
                               color: Colors.black54,
                               fontWeight: FontWeight.w600),
