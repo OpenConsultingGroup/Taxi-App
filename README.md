@@ -1,11 +1,11 @@
 # Flutter Taxi App [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 
-A Flutter taxi app built with bloc pattern. It has following features
+A Flutter starter taxi app built with BLOC pattern. It has following features
 
   - Taxi markers showing on different position on map (Based on static position)
   - Different animations across different part of screen 
-  - Polyline showing on map (Hardcoded data from  google maps api)
+  - Polyline showing on map (Hardcoded data from Google Maps API)
   - Runs on both Android & IOS.
 
 ### Screenshots
@@ -38,15 +38,12 @@ Kudos to [Dibbendo Pranto](https://dribbble.com/Dibbendopranto) for this design.
 
 ### Development
 
-Want to contribute? Great!
-App still have many issues and all pull requests are welcome 
+We love contributors. Looking forward to as many as possible.
+App may still have issues and bugs that may have a quick fix that we missed while development.
 
 ### Developer
 
-I am Bhavneet Singh a freelancer who is always excited to work on new projects. I work on flutter for mobile apps and react js for web apps. If you have interesting work for me then contact me at singhbhavneetdeveloper@gmail.com.
+We are a team of digital nomads who believe in open-source development and free-for-all products.
+We welcome anyone who is genuine and interested in developing great product that solve real world problems.
 
- [Twitter]( <http://twitter.com/developerpaaji>)
- [Linkedin]( <https://www.linkedin.com/in/geekcoder/>)
- [Github]( <https://github.com/singhbhavneet>)
- 
-
+You can get in touch with us at dev@ocg.technology
