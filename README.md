@@ -10,10 +10,10 @@ A Flutter starter taxi app built with BLOC pattern. It has following features
 
 ### Screenshots
 
-![pjimage.jpg](https://www.dropbox.com/s/omqhj54y1x6z29u/pjimage.jpg?dl=0&raw=1)
+![makephotogallery.net_1580238239.jpg](https://www.dropbox.com/s/dgd40s5752y2jsl/makephotogallery.net_1580238239.jpg?dl=0&raw=1)
 
 ### Video Recording
-
+![video.gif](https://firebasestorage.googleapis.com/v0/b/smart-ordr.appspot.com/o/ezgif.com-resize.gif?alt=media&token=3d9a010b-ba52-4045-a24e-cb3078e2a2f1)
 ### Dependencies
 
 This project is built with various awesome open sourced libraries
