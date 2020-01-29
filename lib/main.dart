@@ -5,7 +5,7 @@ import 'package:taxi_app/screens/home_screen.dart';
 
 void main() => runApp(MultiBlocProvider(providers: [
       BlocProvider<TaxiBookingBloc>(
-        builder: (context) => TaxiBookingBloc(),
+        create: (context) => TaxiBookingBloc(),
       )
     ], child: MyApp()));
 
