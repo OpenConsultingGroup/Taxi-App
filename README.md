@@ -47,3 +47,11 @@ We are a team of digital nomads who believe in open-source development and free-
 We welcome anyone who is genuine and interested in developing great product that solve real world problems.
 
 You can get in touch with us at dev@ocg.technology
+
+## How can I support developers?
+- Star our GitHub repo
+- Create pull requests, submit bugs, suggest new features or documentation updates
+
+
+## Can I hire you guys?
+Yes! We are available for hire. Visit [our homepage](https://ocg.technology/) or simply leave us a note to dev@ocg.technology. We will be happy to work with you!
