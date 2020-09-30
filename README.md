@@ -7,6 +7,8 @@ A Flutter starter taxi app built with BLOC pattern. It has following features
   - Different animations across different part of screen 
   - Polyline showing on map (Hardcoded data from Google Maps API)
   - Runs on both Android & IOS.
+  -  It helps in managing state and make access to data from a central place in your project.
+  - Its a state management system for Flutter recommended by Google developers.
 
 ### Screenshots
 
