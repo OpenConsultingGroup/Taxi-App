@@ -47,7 +47,7 @@ class TaxiBookingStateWidget extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     title,
-                    style: Theme.of(context).textTheme.title.copyWith(
+                    style: Theme.of(context).textTheme.titleMedium.copyWith(
                         color: Colors.white, fontWeight: FontWeight.normal),
                   ),
                   IconButton(
@@ -103,7 +103,7 @@ class TaxiBookingStateWidget extends StatelessWidget {
             borderRadius: BorderRadius.circular(12.0)),
         child: Text(
           "$val",
-          style: Theme.of(context).textTheme.headline.copyWith(
+          style: Theme.of(context).textTheme.headlineMedium.copyWith(
               color: enabled ? Colors.black : Colors.white, fontSize: 15),
         ));
   }

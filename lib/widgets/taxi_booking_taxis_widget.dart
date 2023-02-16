@@ -48,7 +48,7 @@ class _TaxiBookingTaxisWidgetState extends State<TaxiBookingTaxisWidget> {
                   ),
                   Text(
                     "Choose Taxi",
-                    style: Theme.of(context).textTheme.headline,
+                    style: Theme.of(context).textTheme.headlineMedium,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -138,7 +138,7 @@ class _TaxiBookingTaxisWidgetState extends State<TaxiBookingTaxisWidget> {
                         ),
                         Text(
                           val.toString().replaceFirst("TaxiType.", ""),
-                          style: Theme.of(context).textTheme.title,
+                          style: Theme.of(context).textTheme.titleMedium,
                         ),
                       ],
                     ),
@@ -182,7 +182,7 @@ class _TaxiBookingTaxisWidgetState extends State<TaxiBookingTaxisWidget> {
         ),
         Text(
           " $text",
-          style: Theme.of(context).textTheme.title,
+          style: Theme.of(context).textTheme.titleMedium,
         )
       ],
     );
@@ -209,7 +209,7 @@ class _TaxiBookingTaxisWidgetState extends State<TaxiBookingTaxisWidget> {
               ),
               Text(
                 "$area",
-                style: Theme.of(context).textTheme.title,
+                style: Theme.of(context).textTheme.titleMedium,
               )
             ],
           ),

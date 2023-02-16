@@ -62,7 +62,7 @@ class _TaxiBookingConfirmedWidgetState extends State<TaxiBookingConfirmedWidget>
                               "Ride Info",
                               style: Theme.of(context)
                                   .textTheme
-                                  .title
+                                  .titleMedium
                                   .copyWith(color: Colors.white),
                             ),
                           ),
@@ -124,14 +124,14 @@ class _TaxiBookingConfirmedWidgetState extends State<TaxiBookingConfirmedWidget>
           children: <Widget>[
             Text(
               "${driver.driverName}",
-              style: Theme.of(context).textTheme.title,
+              style: Theme.of(context).textTheme.titleMedium,
             ),
             SizedBox(
               height: 4.0,
             ),
             Text(
               "${driver.taxiDetails}",
-              style: Theme.of(context).textTheme.subtitle,
+              style: Theme.of(context).textTheme.titleSmall,
             )
           ],
         )),
@@ -153,7 +153,7 @@ class _TaxiBookingConfirmedWidgetState extends State<TaxiBookingConfirmedWidget>
               ),
               Text(
                 "${driver.driverRating}",
-                style: Theme.of(context).textTheme.title,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
             ],
           ),

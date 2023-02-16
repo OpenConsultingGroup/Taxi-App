@@ -46,7 +46,7 @@ class _TaxiBookingDetailsWidgetState extends State<TaxiBookingDetailsWidget> {
                   ),
                   Text(
                     "Address",
-                    style: Theme.of(context).textTheme.headline,
+                    style: Theme.of(context).textTheme.headlineMedium,
                   ),
                   SizedBox(
                     height: 24.0,
@@ -62,7 +62,7 @@ class _TaxiBookingDetailsWidgetState extends State<TaxiBookingDetailsWidget> {
                   ),
                   Text(
                     "Seat and Time",
-                    style: Theme.of(context).textTheme.headline,
+                    style: Theme.of(context).textTheme.headlineMedium,
                   ),
                   SizedBox(
                     height: 24.0,
@@ -115,7 +115,7 @@ class _TaxiBookingDetailsWidgetState extends State<TaxiBookingDetailsWidget> {
       children: <Widget>[
         Text(
           "Need Seat",
-          style: Theme.of(context).textTheme.title,
+          style: Theme.of(context).textTheme.titleMedium,
         ),
         Row(
           mainAxisSize: MainAxisSize.min,
@@ -143,13 +143,13 @@ class _TaxiBookingDetailsWidgetState extends State<TaxiBookingDetailsWidget> {
           children: <Widget>[
             Text(
               "Schedule Time",
-              style: Theme.of(context).textTheme.title,
+              style: Theme.of(context).textTheme.titleMedium,
             ),
             bookingTime == null
                 ? Container()
                 : Text(
                     "${bookingTime.day}-${bookingTime.month}-${bookingTime.year}",
-                    style: Theme.of(context).textTheme.subtitle,
+                    style: Theme.of(context).textTheme.titleSmall,
                   )
           ],
         ),
@@ -194,7 +194,7 @@ class _TaxiBookingDetailsWidgetState extends State<TaxiBookingDetailsWidget> {
             borderRadius: BorderRadius.circular(12.0)),
         child: Text(
           "$val",
-          style: Theme.of(context).textTheme.headline.copyWith(
+          style: Theme.of(context).textTheme.headlineMedium.copyWith(
               color: enabled ? Colors.white : Colors.black, fontSize: 15.0),
         ));
   }
@@ -215,7 +215,7 @@ class _TaxiBookingDetailsWidgetState extends State<TaxiBookingDetailsWidget> {
           child: text != null
               ? Text(
                   "$text",
-                  style: Theme.of(context).textTheme.headline.copyWith(
+                  style: Theme.of(context).textTheme.headlineMedium.copyWith(
                       color: enabled ? Colors.white : Colors.black,
                       fontSize: 15.0),
                 )
@@ -238,7 +238,7 @@ class _TaxiBookingDetailsWidgetState extends State<TaxiBookingDetailsWidget> {
         text ?? hint,
         style: Theme.of(context)
             .textTheme
-            .title
+            .titleMedium
             .copyWith(color: text == null ? Colors.black45 : Colors.black),
         maxLines: 1,
         overflow: TextOverflow.ellipsis,

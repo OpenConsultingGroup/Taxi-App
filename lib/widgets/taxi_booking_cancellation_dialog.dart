@@ -10,7 +10,7 @@ class TaxiBookingCancellationDialog extends StatelessWidget {
       title: Text("Cancel Ride"),
       content: Text("Do you want to cancel ride?"),
       actions: <Widget>[
-        FlatButton(
+        ElevatedButton(
           child: Text(
             "Cancel",
             style: TextStyle(fontSize: 16.0),
@@ -19,7 +19,7 @@ class TaxiBookingCancellationDialog extends StatelessWidget {
             Navigator.of(context).pop();
           },
         ),
-        FlatButton(
+        ElevatedButton(
           child: Text(
             "Ok",
             style: TextStyle(fontSize: 16.0),
