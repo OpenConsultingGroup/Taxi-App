@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:taxi_app/bloc/taxi_booking_bloc.dart';
-import 'package:taxi_app/bloc/taxi_booking_state.dart';
 import 'package:taxi_app/widgets/loading_shimmer.dart';
 import 'package:taxi_app/widgets/taxi_booking_details_widget.dart';
 import 'package:taxi_app/widgets/taxi_booking_not_confirmed_widget.dart';

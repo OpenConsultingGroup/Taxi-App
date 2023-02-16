@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:taxi_app/bloc/taxi_booking_bloc.dart';
-import 'package:taxi_app/bloc/taxi_booking_state.dart';
 import 'package:taxi_app/widgets/dashed_line.dart';
 import 'package:taxi_app/widgets/taxi_booking_cancellation_dialog.dart';
 
@@ -47,7 +46,7 @@ class TaxiBookingStateWidget extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     title,
-                    style: Theme.of(context).textTheme.title.copyWith(
+                    style: Theme.of(context).textTheme.titleMedium.copyWith(
                         color: Colors.white, fontWeight: FontWeight.normal),
                   ),
                   IconButton(
@@ -103,7 +102,7 @@ class TaxiBookingStateWidget extends StatelessWidget {
             borderRadius: BorderRadius.circular(12.0)),
         child: Text(
           "$val",
-          style: Theme.of(context).textTheme.headline.copyWith(
+          style: Theme.of(context).textTheme.headlineMedium.copyWith(
               color: enabled ? Colors.black : Colors.white, fontSize: 15),
         ));
   }

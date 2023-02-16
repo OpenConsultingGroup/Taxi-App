@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:taxi_app/bloc/taxi_booking_bloc.dart';
-import 'package:taxi_app/bloc/taxi_booking_event.dart';
-import 'package:taxi_app/bloc/taxi_booking_state.dart';
 import 'package:taxi_app/models/taxi_booking.dart';
 import 'package:taxi_app/models/taxi_type.dart';
 import 'package:taxi_app/widgets/rounded_button.dart';
+
+import '../bloc/taxi_booking_bloc.dart';
 
 class TaxiBookingTaxisWidget extends StatefulWidget {
   @override
@@ -48,7 +47,7 @@ class _TaxiBookingTaxisWidgetState extends State<TaxiBookingTaxisWidget> {
                   ),
                   Text(
                     "Choose Taxi",
-                    style: Theme.of(context).textTheme.headline,
+                    style: Theme.of(context).textTheme.headlineMedium,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -138,7 +137,7 @@ class _TaxiBookingTaxisWidgetState extends State<TaxiBookingTaxisWidget> {
                         ),
                         Text(
                           val.toString().replaceFirst("TaxiType.", ""),
-                          style: Theme.of(context).textTheme.title,
+                          style: Theme.of(context).textTheme.titleMedium,
                         ),
                       ],
                     ),
@@ -182,7 +181,7 @@ class _TaxiBookingTaxisWidgetState extends State<TaxiBookingTaxisWidget> {
         ),
         Text(
           " $text",
-          style: Theme.of(context).textTheme.title,
+          style: Theme.of(context).textTheme.titleMedium,
         )
       ],
     );
@@ -209,7 +208,7 @@ class _TaxiBookingTaxisWidgetState extends State<TaxiBookingTaxisWidget> {
               ),
               Text(
                 "$area",
-                style: Theme.of(context).textTheme.title,
+                style: Theme.of(context).textTheme.titleMedium,
               )
             ],
           ),

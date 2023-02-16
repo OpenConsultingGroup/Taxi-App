@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:taxi_app/bloc/taxi_booking_bloc.dart';
-import 'package:taxi_app/bloc/taxi_booking_event.dart';
 import 'package:taxi_app/controllers/user_location_controller.dart';
 import 'package:taxi_app/models/user_location.dart';
 import 'package:taxi_app/widgets/ease_in_widget.dart';
@@ -116,7 +115,7 @@ class _DestinationSelctionWidgetState extends State<DestinationSelctionWidget>
               ),
               Text(
                 "${location.locationType.toString().replaceFirst("UserLocationType.", "")}",
-                style: Theme.of(context).textTheme.title,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
               SizedBox(
                 height: 4.0,
@@ -125,7 +124,7 @@ class _DestinationSelctionWidgetState extends State<DestinationSelctionWidget>
                 "${location.minutesFar} minutes",
                 style: Theme.of(context)
                     .textTheme
-                    .subtitle
+                    .titleSmall
                     .copyWith(fontSize: 12.0),
               )
             ],
@@ -171,15 +170,17 @@ class _DestinationSelctionWidgetState extends State<DestinationSelctionWidget>
             ),
             Text(
               "New Ride",
-              style: Theme.of(context).textTheme.title,
+              style: Theme.of(context).textTheme.titleMedium,
             ),
             SizedBox(
               height: 4.0,
             ),
             Text(
               "Select Dest.",
-              style:
-                  Theme.of(context).textTheme.subtitle.copyWith(fontSize: 12.0),
+              style: Theme.of(context)
+                  .textTheme
+                  .titleSmall
+                  .copyWith(fontSize: 12.0),
             )
           ],
         ),

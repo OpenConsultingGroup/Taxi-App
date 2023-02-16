@@ -5,10 +5,10 @@ import 'package:location/location.dart';
 class UserLocationController {
   static Future<LatLng> getCurrentLocation() async {
     Location location = Location();
-    bool check = await location.hasPermission();
-    if (!check) {
-      bool result = await location.requestPermission();
-      if (result) {
+    PermissionStatus check = await location.hasPermission();
+    if (check == PermissionStatus.denied) {
+      check = await location.requestPermission();
+      if (check == PermissionStatus.granted) {
         LocationData position = await location.getLocation();
         return LatLng(position.latitude, position.longitude);
       }

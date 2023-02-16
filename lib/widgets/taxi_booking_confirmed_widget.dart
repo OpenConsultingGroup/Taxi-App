@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:taxi_app/bloc/taxi_booking_bloc.dart';
-import 'package:taxi_app/bloc/taxi_booking_state.dart';
 import 'package:taxi_app/models/taxi_booking.dart';
 import 'package:taxi_app/models/taxi_driver.dart';
 import 'package:taxi_app/widgets/taxi_booking_cancellation_dialog.dart';
@@ -62,7 +61,7 @@ class _TaxiBookingConfirmedWidgetState extends State<TaxiBookingConfirmedWidget>
                               "Ride Info",
                               style: Theme.of(context)
                                   .textTheme
-                                  .title
+                                  .titleMedium
                                   .copyWith(color: Colors.white),
                             ),
                           ),
@@ -124,14 +123,14 @@ class _TaxiBookingConfirmedWidgetState extends State<TaxiBookingConfirmedWidget>
           children: <Widget>[
             Text(
               "${driver.driverName}",
-              style: Theme.of(context).textTheme.title,
+              style: Theme.of(context).textTheme.titleMedium,
             ),
             SizedBox(
               height: 4.0,
             ),
             Text(
               "${driver.taxiDetails}",
-              style: Theme.of(context).textTheme.subtitle,
+              style: Theme.of(context).textTheme.titleSmall,
             )
           ],
         )),
@@ -153,7 +152,7 @@ class _TaxiBookingConfirmedWidgetState extends State<TaxiBookingConfirmedWidget>
               ),
               Text(
                 "${driver.driverRating}",
-                style: Theme.of(context).textTheme.title,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
             ],
           ),

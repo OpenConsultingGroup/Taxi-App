@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:taxi_app/bloc/taxi_booking_bloc.dart';
-import 'package:taxi_app/bloc/taxi_booking_event.dart';
-import 'package:taxi_app/bloc/taxi_booking_state.dart';
+
 import 'package:taxi_app/models/payment_method.dart';
 import 'package:taxi_app/widgets/rounded_button.dart';
 
@@ -21,7 +20,7 @@ class _TaxiBookingPaymentsWidgetState extends State<TaxiBookingPaymentsWidget> {
     super.initState();
     methods = (BlocProvider.of<TaxiBookingBloc>(context).state
             as PaymentNotInitializedState)
-        .methodsAvaiable;
+        .methodsAvailable;
   }
 
   @override
@@ -40,7 +39,7 @@ class _TaxiBookingPaymentsWidgetState extends State<TaxiBookingPaymentsWidget> {
                   children: <Widget>[
                     Text(
                       "Select Payment",
-                      style: Theme.of(context).textTheme.headline,
+                      style: Theme.of(context).textTheme.headlineMedium,
                     ),
                     ListView.separated(
                       itemBuilder: (context, index) {
@@ -56,7 +55,7 @@ class _TaxiBookingPaymentsWidgetState extends State<TaxiBookingPaymentsWidget> {
                     ),
                     Text(
                       "Promo Code",
-                      style: Theme.of(context).textTheme.headline,
+                      style: Theme.of(context).textTheme.headlineMedium,
                     ),
                     SizedBox(
                       height: 18.0,
@@ -129,14 +128,14 @@ class _TaxiBookingPaymentsWidgetState extends State<TaxiBookingPaymentsWidget> {
                 children: <Widget>[
                   Text(
                     "${method.title}",
-                    style: Theme.of(context).textTheme.title,
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
                   SizedBox(
                     height: 4.0,
                   ),
                   Text(
                     "${method.description}",
-                    style: Theme.of(context).textTheme.subtitle,
+                    style: Theme.of(context).textTheme.titleSmall,
                   ),
                 ],
               ),
@@ -167,7 +166,7 @@ class _TaxiBookingPaymentsWidgetState extends State<TaxiBookingPaymentsWidget> {
         text ?? hint,
         style: Theme.of(context)
             .textTheme
-            .title
+            .titleMedium
             .copyWith(color: text == null ? Colors.black45 : Colors.black),
         maxLines: 1,
         overflow: TextOverflow.ellipsis,

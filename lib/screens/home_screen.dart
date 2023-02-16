@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:taxi_app/bloc/taxi_booking_bloc.dart';
-import 'package:taxi_app/bloc/taxi_booking_event.dart';
-import 'package:taxi_app/bloc/taxi_booking_state.dart';
 import 'package:taxi_app/widgets/destination_selection_widget.dart';
 import 'package:taxi_app/widgets/home_app_bar.dart';
 import 'package:taxi_app/widgets/home_drawer.dart';
 import 'package:taxi_app/widgets/taxi_booking_confirmed_widget.dart';
 import 'package:taxi_app/widgets/taxi_booking_home_widget.dart';
 import 'package:taxi_app/widgets/taxi_map.dart';
+
+import '../bloc/taxi_booking_bloc.dart';
 
 class HomeScreen extends StatefulWidget {
   @override

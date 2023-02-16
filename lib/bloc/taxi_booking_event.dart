@@ -1,9 +1,4 @@
-import 'package:equatable/equatable.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:taxi_app/models/google_location.dart';
-import 'package:taxi_app/models/payment_method.dart';
-import 'package:taxi_app/models/taxi_type.dart';
+part of 'taxi_booking_bloc.dart';
 
 abstract class TaxiBookingEvent extends Equatable {
   TaxiBookingEvent();
@@ -17,7 +12,7 @@ class TaxiBookingStartEvent extends TaxiBookingEvent {
 class DestinationSelectedEvent extends TaxiBookingEvent {
   final LatLng destination;
 
-  DestinationSelectedEvent({@required this.destination});
+  DestinationSelectedEvent({this.destination});
 
   @override
   List<Object> get props => [destination];
@@ -29,11 +24,12 @@ class DetailsSubmittedEvent extends TaxiBookingEvent {
   final int noOfPersons;
   final DateTime bookingTime;
 
-  DetailsSubmittedEvent(
-      {@required this.source,
-      @required this.destination,
-      @required this.noOfPersons,
-      @required this.bookingTime});
+  DetailsSubmittedEvent({
+    this.source,
+    this.destination,
+    this.noOfPersons,
+    this.bookingTime,
+  });
 
   @override
   List<Object> get props => [source, destination, noOfPersons, bookingTime];
@@ -42,7 +38,7 @@ class DetailsSubmittedEvent extends TaxiBookingEvent {
 class TaxiSelectedEvent extends TaxiBookingEvent {
   final TaxiType taxiType;
 
-  TaxiSelectedEvent({@required this.taxiType});
+  TaxiSelectedEvent({this.taxiType});
 
   @override
   List<Object> get props => [taxiType];
@@ -51,7 +47,7 @@ class TaxiSelectedEvent extends TaxiBookingEvent {
 class PaymentMadeEvent extends TaxiBookingEvent {
   final PaymentMethod paymentMethod;
 
-  PaymentMadeEvent({@required this.paymentMethod});
+  PaymentMadeEvent({this.paymentMethod});
 
   @override
   List<Object> get props => [paymentMethod];
