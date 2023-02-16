@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:taxi_app/bloc/taxi_booking_bloc.dart';
-import 'package:taxi_app/bloc/taxi_booking_event.dart';
-import 'package:taxi_app/bloc/taxi_booking_state.dart';
 import 'package:taxi_app/models/taxi_booking.dart';
 import 'package:taxi_app/models/taxi_type.dart';
 import 'package:taxi_app/widgets/rounded_button.dart';
+
+import '../bloc/taxi_booking_bloc.dart';
 
 class TaxiBookingTaxisWidget extends StatefulWidget {
   @override

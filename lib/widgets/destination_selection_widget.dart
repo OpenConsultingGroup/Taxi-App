@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:taxi_app/bloc/taxi_booking_bloc.dart';
-import 'package:taxi_app/bloc/taxi_booking_event.dart';
 import 'package:taxi_app/controllers/user_location_controller.dart';
 import 'package:taxi_app/models/user_location.dart';
 import 'package:taxi_app/widgets/ease_in_widget.dart';
@@ -178,8 +177,10 @@ class _DestinationSelctionWidgetState extends State<DestinationSelctionWidget>
             ),
             Text(
               "Select Dest.",
-              style:
-                  Theme.of(context).textTheme.titleSmall.copyWith(fontSize: 12.0),
+              style: Theme.of(context)
+                  .textTheme
+                  .titleSmall
+                  .copyWith(fontSize: 12.0),
             )
           ],
         ),

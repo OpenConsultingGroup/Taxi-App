@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:taxi_app/bloc/taxi_booking_bloc.dart';
-import 'package:taxi_app/bloc/taxi_booking_event.dart';
-import 'package:taxi_app/bloc/taxi_booking_state.dart';
+
 import 'package:taxi_app/models/payment_method.dart';
 import 'package:taxi_app/widgets/rounded_button.dart';
 
@@ -21,7 +20,7 @@ class _TaxiBookingPaymentsWidgetState extends State<TaxiBookingPaymentsWidget> {
     super.initState();
     methods = (BlocProvider.of<TaxiBookingBloc>(context).state
             as PaymentNotInitializedState)
-        .methodsAvaiable;
+        .methodsAvailable;
   }
 
   @override

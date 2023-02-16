@@ -20,7 +20,8 @@ class MyApp extends StatelessWidget {
           primaryColor: Colors.black,
           fontFamily: 'Ubuntu',
           textTheme: TextTheme(
-              titleMedium: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w600),
+              titleMedium:
+                  TextStyle(fontSize: 16.0, fontWeight: FontWeight.w600),
               titleSmall: TextStyle(color: Colors.black54),
               headlineSmall:
                   TextStyle(color: Colors.black54, fontWeight: FontWeight.w800),
